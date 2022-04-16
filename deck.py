@@ -1,12 +1,10 @@
-import numpy.random as npr 
-import numpy as np 
-from util import p 
-from CardReader import CardReader as cr
 
+from util import p 
+import Imports as I
 
 class Deck():
-    deck = npr.choice(52, 52, replace=False)  # 0 = 52
-    deck = np.where(deck == 0, 52, deck)
+    deck = I.npr.choice(52, 52, replace=False)  # 0 = 52
+    deck = I.np.where(deck == 0, 52, deck)
     hand = []
 
     def __init__(self):

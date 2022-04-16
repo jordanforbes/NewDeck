@@ -1,8 +1,9 @@
-import numpy.random as npr 
-import numpy as np 
+# import numpy.random as npr 
+# import numpy as np 
 from util import p 
-from CardReader import CardReader as cr
-from deck import Deck 
+# from CardReader import CardReader as cr
+# from deck import Deck
+import Imports as I
 
 class Player():
     def __init__(self):
@@ -23,13 +24,16 @@ class Player():
 #deck creation/shuffle 
 
 
-
-d = Deck()
+p("1")
+d = I.deck()
 
 p("@@@@START@@@@")
+p("4")
 for x in range(2):
     d.draw()
+p("3")
 d.readHand()
+p("2")
 d.shuffle() 
 d.draw()
 d.readHand()

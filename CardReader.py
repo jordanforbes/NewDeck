@@ -1,5 +1,4 @@
-from deck import Deck
-from util import p 
+import Imports as I
 
 class CardReader():
     @staticmethod

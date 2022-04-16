@@ -1,11 +1,11 @@
 import numpy.random as npr
 import numpy as np
 from util import p
-from CardReader import CardReader as cr
-from deck import Deck
+import CardReader as cr
+from Deck import Deck as d
 
-class imports():
-    npr = npr
-    np = np 
-    cr = cr
-    deck = Deck 
+
+npr = npr
+np = np 
+cr = cr
+deck = d
